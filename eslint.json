@@ -1,0 +1,83 @@
+{
+  "extend": "eslint:recommend",
+  "parser": "babel-eslint",
+
+  "env": {
+    "browser": true,
+    "node": true,
+    "amd": false,
+    "mocha": true,
+    "jasmine": false,
+    "jquery": false,
+    "phantomjs": false,
+    "shelljs": false,
+    "es6": true
+  },
+
+  "ecmaFeatures": {
+    "arrowFunctions": true,
+    "binaryLiterals": true,
+    "blockBindings": true,
+    "classes": true,
+    "defaultParams": true,
+    "destructuring": true,
+    "forOf": true,
+    "generators": true,
+    "modules": true,
+    "objectLiteralComputedProperties": true,
+    "objectLiteralDuplicateProperties": true,
+    "objectLiteralShorthandMethods": true,
+    "objectLiteralShorthandProperties": true,
+    "octalLiterals": true,
+    "regexUFlag": true,
+    "regexYFlag": true,
+    "spread": true,
+    "superInFunctions": true,
+    "templateStrings": true,
+    "unicodeCodePointEscapes": true,
+    "globalReturn": true,
+    "jsx": true
+  },
+
+  "rules": {
+    //best practice
+    "no-unexpected-multiline": 2,
+    "dot-location": [2, "property"],
+    "guard-for-in": 2,
+    "no-else-return": 2,
+    "no-floating-decimal": 2,
+    "no-param-reassign": 2,
+    "no-self-compare": 2,
+    "no-throw-literal": 2,
+    "no-useless-call": 2,
+    "radix": 2,
+    //strict mode
+    "strict": [2, "global"],
+    //variables
+    "no-unused-vars": 0,
+    "no-use-before-define": [2, "nofunc"],
+    //node.js
+    "callback-return": 2,
+    "no-path-concat": 2,
+    //stylistic issues
+    "array-bracket-spacing": 2,
+    "linebreak-style": [2, "unix"],
+    "no-console": 0,
+    "no-unneeded-ternary": 2,
+    "object-curly-spacing": 2,
+    "quotes": [2, "single"],
+    "spaced-comment": 2,
+    //es6
+    "arrow-parens": 2,
+    "arrow-spacing": [2, {"before": true, "after": true}],
+    "constructor-super": 2,
+    "no-class-assign": 2,
+    "no-const-assign": 2,
+    "no-this-before-super": 2,
+    "no-var": 2,
+    "object-shorthand": 2,
+    "prefer-const": 2,
+    "prefer-spread": 2
+  }
+
+}
