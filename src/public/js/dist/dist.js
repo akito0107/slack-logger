@@ -76,7 +76,12 @@
 	});
 
 	function getMessage(id) {
-	  $.ajax({});
+	  $('#js-message-target').empty();
+	  $.get('/v1/message/' + id, function (response) {
+	    _underscore2['default'].map(response, function (message) {
+	      $('#js-message-target').append('<p>' + message.user_name + ' : ' + message.text + '</p>');
+	    });
+	  });
 	}
 
 /***/ },

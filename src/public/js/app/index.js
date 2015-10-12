@@ -21,7 +21,10 @@ $.get('/v1/channel', (response) => {
 });
 
 function getMessage(id) {
-  $.ajax({
-
+  $('#js-message-target').empty();
+  $.get('/v1/message/' + id, (response) => {
+    _.map(response, (message) => {
+      $('#js-message-target').append('<p>' + message.user_name + ' : ' + message.text + '</p>');
+    });
   });
 }
